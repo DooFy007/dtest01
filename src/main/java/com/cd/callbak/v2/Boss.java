@@ -26,10 +26,7 @@ public class Boss {
         System.out.println(message);
     }
 
-    public static void main(String[] args) throws InterruptedException {
-        Boss boss=new Boss("老板");
-        boss.releaseAtask(new Employee("员工"));
-    }
+
 
 
 }
