@@ -1,0 +1,20 @@
+HashMap 1.8
+    实现方式：
+        1.8 数组+链表+红黑树
+    几个重要的概念：
+        1.负载因子load_factor
+        2.数组容量capacity
+        3.阈值threshold=capacity*load_factor
+        4.map的大小size
+        5.扩容机制
+        当size>=threshold就会触发扩容机制
+    HashMap的特点：
+        key非空且唯一，键值对
+    阈值的概念：
+        threshold:数组的阈值，当达到此阈值时
+    hashCode():本地方法。hashCode值相等，equals不一定相等。equals相等，hashCode一定相等
+               数据（对象）的存储地址的映射。因为hashCode可能会有冲突，所以hashCode相等，俩个对象不一定相等
+
+Object -->native int hashCode()
+        1.是一个本地方法。native
+        2.作用：将对象的存储地址做一个映射，根据hashCode值就可以快速找到对象
